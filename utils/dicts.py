@@ -1,12 +1,12 @@
 
 def get_val(collection, key, default='git'):
     """
-        :param array: исходный список.
-        :param index: индекс элемента.
+        :param collection: исходный словарь.
+        :param key: ключ элемента.
         :param default: значение по-умолчанию.
-        :return: значение по индексу (если есть) или значение по-умолчанию.
+        :return: значение по ключу (если есть) или значение по-умолчанию.
     """
 
-    if 0 <= key < len(collection):
+    if key in collection:
         return collection[key]
     return default
